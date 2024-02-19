@@ -13,6 +13,27 @@ class HomeScreen extends StatelessWidget {
       body: const Column(
         children: [],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Get.snackbar(
+            "Welcome",
+            "from Muhammad Naqeeb",
+            snackPosition: SnackPosition.BOTTOM,
+            backgroundColor: Colors.amber,
+            icon: const Icon(Icons.add),
+            mainButton: TextButton(
+              onPressed: () {
+                print("Main Button");
+              },
+              child: const Text("Main Button"),
+            ),
+            onTap: (snack) {
+              print("SNACK: $snack");
+            },
+          );
+        },
+        child: const Icon(Icons.notifications),
+      ),
     );
   }
 }
