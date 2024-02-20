@@ -64,12 +64,16 @@ class HomeScreen extends StatelessWidget {
                         ListTile(
                           leading: const Icon(Icons.lightbulb_outlined),
                           title: const Text("Light Theme"),
-                          onTap: () {},
+                          onTap: () {
+                            Get.changeTheme(ThemeData.light());
+                          },
                         ),
                         ListTile(
                           leading: const Icon(Icons.dark_mode),
                           title: const Text("Dark Theme"),
-                          onTap: () {},
+                          onTap: () {
+                            Get.changeTheme(ThemeData.dark());
+                          },
                         ),
                       ],
                     ),
