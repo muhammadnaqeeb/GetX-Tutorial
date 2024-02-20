@@ -12,6 +12,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Column(
         children: [
+          // Dialog Alert
           Card(
             child: ListTile(
               title: const Text("GetX dialog Alert"),
@@ -42,6 +43,37 @@ class HomeScreen extends StatelessWidget {
                   //     Text("Hi"),
                   //   ],
                   // ),
+                );
+              },
+            ),
+          ),
+          // Bottom Sheet
+          Card(
+            child: ListTile(
+              title: const Text("GetX Bottom Sheet"),
+              subtitle: const Text("Click On the Card"),
+              onTap: () {
+                Get.bottomSheet(
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Wrap(
+                      children: [
+                        ListTile(
+                          leading: const Icon(Icons.lightbulb_outlined),
+                          title: const Text("Light Theme"),
+                          onTap: () {},
+                        ),
+                        ListTile(
+                          leading: const Icon(Icons.dark_mode),
+                          title: const Text("Dark Theme"),
+                          onTap: () {},
+                        ),
+                      ],
+                    ),
+                  ),
                 );
               },
             ),
