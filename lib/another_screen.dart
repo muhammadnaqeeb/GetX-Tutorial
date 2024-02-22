@@ -3,16 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class AnotherScreen extends StatelessWidget {
-  final String name;
   const AnotherScreen({
     Key? key,
-    required this.name,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Another Page $name")),
+      appBar: AppBar(title: Text("Another Page ${Get.arguments[0]}")),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
