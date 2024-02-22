@@ -92,6 +92,13 @@ class HomeScreen extends StatelessWidget {
               },
             ),
           ),
+          // height and width
+          Container(
+            color: Colors.amber,
+            height: Get.height * 0.5,
+            width: Get.width,
+            child: const Text("Container"),
+          )
         ],
       ),
       floatingActionButton: FloatingActionButton(
