@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_tutorial/another_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -81,7 +82,19 @@ class HomeScreen extends StatelessWidget {
                 );
               },
             ),
-          )
+          ),
+          // Navigation
+          Card(
+            child: ListTile(
+              title: const Text("Navigation"),
+              subtitle: const Text("Navigate to next page"),
+              onTap: () {
+                Get.to(() => const AnotherScreen(
+                      name: "Naqeeb",
+                    ));
+              },
+            ),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
