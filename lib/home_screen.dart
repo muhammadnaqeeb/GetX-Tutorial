@@ -92,13 +92,22 @@ class HomeScreen extends StatelessWidget {
               },
             ),
           ),
+          Card(
+            child: ListTile(
+              title: const Text("Counter App"),
+              subtitle: const Text("Counter app example using getX"),
+              onTap: () {
+                Get.toNamed("/counter_screen");
+              },
+            ),
+          ),
           // height and width
           Container(
             color: Colors.amber,
-            height: Get.height * 0.5,
+            height: Get.height * 0.1,
             width: Get.width,
             child: const Text("Container"),
-          )
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(

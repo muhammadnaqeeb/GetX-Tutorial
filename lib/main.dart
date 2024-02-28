@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_tutorial/another_screen.dart';
+import 'package:getx_tutorial/counter_screen.dart';
 import 'package:getx_tutorial/home_screen.dart';
 import 'package:getx_tutorial/languages.dart';
 
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
           name: "/anotherScreen",
           page: () => const AnotherScreen(),
         ),
+        GetPage(name: "/counter_screen", page: () => const CounterScreen()),
       ],
     );
   }
