@@ -15,14 +15,32 @@ class AnotherScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Center(
-            child: TextButton(
-              onPressed: () {
-                Get.back();
-              },
-              child: const Text("Go Back"),
-            ),
+          ListTile(
+            title: Text('message'.tr),
+            subtitle: Text('name'.tr),
           ),
+          const SizedBox(
+            height: 20,
+          ),
+          Row(
+            children: [
+              OutlinedButton(
+                onPressed: () {
+                  Get.updateLocale(const Locale('en', 'US'));
+                },
+                child: const Text("English"),
+              ),
+              const SizedBox(
+                width: 20,
+              ),
+              OutlinedButton(
+                onPressed: () {
+                  Get.updateLocale(const Locale('ur', 'PK'));
+                },
+                child: const Text("Urdu"),
+              ),
+            ],
+          )
         ],
       ),
     );
