@@ -4,6 +4,7 @@ import 'package:getx_tutorial/another_screen.dart';
 import 'package:getx_tutorial/counter_screen.dart';
 import 'package:getx_tutorial/home_screen.dart';
 import 'package:getx_tutorial/languages.dart';
+import 'package:getx_tutorial/opacity_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
           page: () => const AnotherScreen(),
         ),
         GetPage(name: "/counter_screen", page: () => const CounterScreen()),
+        GetPage(name: "/slider_screen", page: () => OpacitySlider()),
       ],
     );
   }

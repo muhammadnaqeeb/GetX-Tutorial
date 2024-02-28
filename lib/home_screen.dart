@@ -101,6 +101,15 @@ class HomeScreen extends StatelessWidget {
               },
             ),
           ),
+          Card(
+            child: ListTile(
+              title: const Text("Slider Example"),
+              subtitle: const Text("Opacity Slider using getx"),
+              onTap: () {
+                Get.toNamed("/slider_screen");
+              },
+            ),
+          ),
           // height and width
           Container(
             color: Colors.amber,
