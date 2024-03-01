@@ -110,6 +110,15 @@ class HomeScreen extends StatelessWidget {
               },
             ),
           ),
+          Card(
+            child: ListTile(
+              title: const Text("Favourite Screen"),
+              subtitle: const Text("Select the favorite item"),
+              onTap: () {
+                Get.toNamed("/select_favourite_screen");
+              },
+            ),
+          ),
           // height and width
           Container(
             color: Colors.amber,

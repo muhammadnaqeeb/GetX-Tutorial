@@ -5,6 +5,7 @@ import 'package:getx_tutorial/counter_screen.dart';
 import 'package:getx_tutorial/home_screen.dart';
 import 'package:getx_tutorial/languages.dart';
 import 'package:getx_tutorial/opacity_screen.dart';
+import 'package:getx_tutorial/select_favourite_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,6 +36,9 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(name: "/counter_screen", page: () => const CounterScreen()),
         GetPage(name: "/slider_screen", page: () => OpacitySlider()),
+        GetPage(
+            name: "/select_favourite_screen",
+            page: () => SelectFavouriteScreen()),
       ],
     );
   }
