@@ -119,6 +119,15 @@ class HomeScreen extends StatelessWidget {
               },
             ),
           ),
+          Card(
+            child: ListTile(
+              title: const Text("Select Image"),
+              subtitle: const Text("Select Image Screen"),
+              onTap: () {
+                Get.toNamed("/select_image_screen");
+              },
+            ),
+          ),
           // height and width
           Container(
             color: Colors.amber,

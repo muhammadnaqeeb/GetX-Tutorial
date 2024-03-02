@@ -6,6 +6,7 @@ import 'package:getx_tutorial/home_screen.dart';
 import 'package:getx_tutorial/languages.dart';
 import 'package:getx_tutorial/opacity_screen.dart';
 import 'package:getx_tutorial/select_favourite_screen.dart';
+import 'package:getx_tutorial/select_image_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,6 +40,9 @@ class MyApp extends StatelessWidget {
         GetPage(
             name: "/select_favourite_screen",
             page: () => SelectFavouriteScreen()),
+        GetPage(
+            name: "/select_image_screen",
+            page: () => const SelectImageScreen()),
       ],
     );
   }
