@@ -4,6 +4,7 @@ import 'package:getx_tutorial/another_screen.dart';
 import 'package:getx_tutorial/counter_screen.dart';
 import 'package:getx_tutorial/home_screen.dart';
 import 'package:getx_tutorial/languages.dart';
+import 'package:getx_tutorial/login_screen.dart';
 import 'package:getx_tutorial/opacity_screen.dart';
 import 'package:getx_tutorial/select_favourite_screen.dart';
 import 'package:getx_tutorial/select_image_screen.dart';
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
         GetPage(
             name: "/select_image_screen",
             page: () => const SelectImageScreen()),
+        GetPage(name: "/login_screen", page: () => LoginScreen()),
       ],
     );
   }
